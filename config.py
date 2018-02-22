@@ -1,4 +1,5 @@
-# paste twitter info here
+# paste twitter info here - need to change this for github
+# so that I don't upload my keys
 
 consumer_key = 'your-consumer-key'
 consumer_secret = 'your-consumer-secret'

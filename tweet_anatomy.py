@@ -1,4 +1,4 @@
-#look at the structure of a tweet
+# look at the structure of a tweet
 
 import json
  

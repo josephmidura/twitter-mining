@@ -1,4 +1,6 @@
-# python twitter_stream_download.py -q austin-d data
+# To run this code:
+# mkdir data
+# python twitter_stream_download.py -q austin -d data
 # 
 # It will produce the list of tweets for the query "austin" 
 # in the file data/stream_austin.json
@@ -14,7 +16,7 @@ import config
 import json
 
 def get_parser():
-    """Get parser for command line arguments."""
+    # Get parser for command line arguments
     parser = argparse.ArgumentParser(description="Twitter Downloader")
     parser.add_argument("-q",
                         "--query",
@@ -29,7 +31,7 @@ def get_parser():
 
 
 class MyListener(StreamListener):
-    """Custom StreamListener for streaming data."""
+    # Custom StreamListener for streaming data
 
     def __init__(self, data_dir, query):
         query_fname = format_filename(query)
@@ -89,3 +91,4 @@ if __name__ == '__main__':
 
     twitter_stream = Stream(auth, MyListener(args.data_dir, args.query))
     twitter_stream.filter(track=[args.query])
+

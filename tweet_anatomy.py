@@ -7,7 +7,7 @@ with open('mytweets.json', 'r') as f:
     tweet = json.loads(line)           # load it as Python dict
     print(json.dumps(tweet, indent=4)) # pretty-print
 
-""" pre processing to consider @mentions, emoticons, URLs and hashtags"""
+# pre processing to consider @mentions, emoticons, URLs and hashtags
 import re
  
 emoticons_str = r"""
@@ -46,11 +46,10 @@ tweet = 'RT @josephmidura: just an example! :D http://example.com #NLP'
 print(preprocess(tweet))
 # ['RT', '@josephmidura', ':', 'just', 'an', 'example', '!', ':D', 'http://example.com', '#NLP']  
 
-
-
 ## Process all my tweets   
 with open('mytweets.json', 'r') as f:
     for line in f:
         tweet = json.loads(line)
         tokens = preprocess(tweet['text'])
         do_something_else(tokens)
+

@@ -1,3 +1,5 @@
+#look at the structure of a tweet
+
 import json
  
 with open('mytweets.json', 'r') as f:

@@ -1,3 +1,4 @@
+# preprocess and count words
 import operator 
 import json
 from collections import Counter

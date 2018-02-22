@@ -1,7 +1,6 @@
-# paste twitter info here - need to change this for github
-# so that I don't upload my keys
+# my key redacted 
 
-consumer_key = 'your-consumer-key'
-consumer_secret = 'your-consumer-secret'
-access_token = 'your-access-token'
-access_secret = 'your-access-secret'
+consumer_key = 'redacted'
+consumer_secret = 'redacted'
+access_token = 'redacted'
+access_secret = 'redacted'

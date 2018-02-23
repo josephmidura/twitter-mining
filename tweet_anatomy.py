@@ -23,7 +23,6 @@ regex_str = [
     r'(?:@[\w_]+)', # @-mentions
     r"(?:\#+[\w_]+[\w\'_\-]*[\w_]+)", # hash-tags
     r'http[s]?://(?:[a-z]|[0-9]|[$-_@.&amp;+]|[!*\(\),]|(?:%[0-9a-f][0-9a-f]))+', # URLs
- 
     r'(?:(?:\d+,?)+(?:\.?\d+)?)', # numbers
     r"(?:[a-z][a-z'\-_]+[a-z])", # words with - and '
     r'(?:[\w_]+)', # other words
@@ -42,9 +41,9 @@ def preprocess(s, lowercase=False):
         tokens = [token if emoticon_re.search(token) else token.lower() for token in tokens]
     return tokens
  
-tweet = 'RT @josephmidura: just an example! :D http://example.com #NLP'
+tweet = 'RT @jpmidura: just an example! :D http://example.com #NLP'
 print(preprocess(tweet))
-# ['RT', '@josephmidura', ':', 'just', 'an', 'example', '!', ':D', 'http://example.com', '#NLP']  
+# ['RT', '@jpmidura', ':', 'just', 'an', 'example', '!', ':D', 'http://example.com', '#NLP']  
 
 ## Process all my tweets   
 with open('mytweets.json', 'r') as f:

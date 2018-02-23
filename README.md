@@ -1,4 +1,4 @@
-# twitter-mining
+# twitter-mining for AustinStartups.com
 
 """
 Existing approaches to sentiment analysis can be grouped into three main

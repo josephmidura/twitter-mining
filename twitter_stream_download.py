@@ -1,10 +1,5 @@
-# To run this code:
-# mkdir data
-# python twitter_stream_download.py -q austin -d data
+# To run: python twitter_stream_download.py -q austin -d data
 # 
-# It will produce the list of tweets for the query "austin" 
-# in the file data/stream_austin.json
-
 import tweepy
 from tweepy import Stream
 from tweepy import OAuthHandler
@@ -91,4 +86,5 @@ if __name__ == '__main__':
 
     twitter_stream = Stream(auth, MyListener(args.data_dir, args.query))
     twitter_stream.filter(track=[args.query])
+
 

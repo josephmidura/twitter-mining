@@ -1,4 +1,5 @@
 # preprocess and count words
+
 import operator 
 import json
 from collections import Counter
@@ -24,9 +25,11 @@ stop = stopwords.words('english') + punctuation + ['rt', 'via']
 
 # Count terms only once, equivalent to Document Frequency
 terms_single = set(terms_all)
+
 # Count hashtags only
 terms_hash = [term for term in preprocess(tweet['text']) 
               if term.startswith('#')]
+
 # Count terms only (no hashtags, no mentions)
 terms_only = [term for term in preprocess(tweet['text']) 
               if term not in stop and

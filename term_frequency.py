@@ -1,4 +1,5 @@
 # preprocess and count words
+# need to make sure the new tweepy version works
 
 import operator 
 import json

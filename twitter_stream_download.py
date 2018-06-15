@@ -1,4 +1,6 @@
 # To run: python twitter_stream_download.py -q austin -d data
+# works in python3
+#
 # 
 import tweepy
 from tweepy import Stream
